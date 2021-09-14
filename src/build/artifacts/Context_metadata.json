@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.6.12+commit.27d51765"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/NFTea.sol": "Context"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/NFTea.sol": {
+			"keccak256": "0x6c9b07b629ade5835e370e616f249f000e0e9be4998962027da6bba823ed92a6",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f9726b70d93820f32db10d753c46a7badca77a5fd19e6d55c259f46efe1d795e",
+				"dweb:/ipfs/QmWuSH1VxMvXCpibJULfPo1F9Ggtx6a6K8PGNd5naXHtxr"
+			]
+		}
+	},
+	"version": 1
+}
