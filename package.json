@@ -1,6 +1,6 @@
 {
-  "name": "Blokios",
-  "version": "0.0.0",
+  "name": "NFTEA",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve --port 4200  --no-live-reload --disableHostCheck=true --proxy-config src/proxy.json",
@@ -22,6 +22,7 @@
     "@angular/platform-browser-dynamic": "~8.2.14",
     "@angular/router": "~8.2.14",
     "@fleekhq/fleek-storage-js": "^1.0.15",
+    "@metamask/detect-provider": "^1.2.0",
     "@types/web3": "^1.2.2",
     "@walletconnect/client": "^1.4.1",
     "@walletconnect/web3-provider": "^1.4.1",

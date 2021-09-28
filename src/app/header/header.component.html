@@ -1,5 +1,5 @@
 <!-- header begin -->
-<header class="transparent header-light scroll-light">
+<header class="transparent header-light scroll-light" style="display:none">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -18,13 +18,13 @@
                     <div class="de-flex-col header-col-mid">
                         <!-- mainmenu begin -->
                         <ul id="mainmenu">
-                            <li>
+                            <li >
                                 <a routerLink="/home" href="javascript: void(0)">Home<span></span></a>
                             </li>
-                            <li>
+                            <li *ngIf="!connected">
                                 <a routerLink="/register" href="javascript: void(0)">Sign Up<span></span></a>
                             </li>
-                            <li>
+                            <li *ngIf="!connected">
                                 <a routerLink="/login" href="javascript: void(0)">Login<span></span></a>
                             </li>
                             <li>
@@ -32,8 +32,12 @@
 
                             </li>
                         </ul>
-                        <div class="menu_side_area">
-                            <a href="javascript: void(0)" class="btn-main"><i class="icon_wallet_alt"></i><span>Connect Wallet</span></a>
+                        <div class="menu_side_area" *ngIf="!connected">
+                            <a href="javascript: void(0)" (click)="getConnect()" class="btn-main"><i class="icon_wallet_alt"></i><span>Connect Wallet</span></a>
+                            <span id="menu-btn"></span>
+                        </div>
+                        <div class="menu_side_area" *ngIf="connected">
+                            <a href="javascript: void(0)" routerLink="/create" class="btn-main"><i class="icon_wallet_alt"></i><span>Create NFT</span></a>
                             <span id="menu-btn"></span>
                         </div>
                     </div>

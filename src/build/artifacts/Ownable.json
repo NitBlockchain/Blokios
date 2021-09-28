@@ -31,12 +31,14 @@
 	},
 	"data": {
 		"bytecode": {
+			"generatedSources": [],
 			"linkReferences": {},
 			"object": "",
 			"opcodes": "",
 			"sourceMap": ""
 		},
 		"deployedBytecode": {
+			"generatedSources": [],
 			"immutableReferences": {},
 			"linkReferences": {},
 			"object": "",
@@ -45,12 +47,9 @@
 		},
 		"gasEstimates": null,
 		"methodIdentifiers": {
-			"geUnlockTime()": "b6c52324",
-			"lock(uint256)": "dd467064",
 			"owner()": "8da5cb5b",
 			"renounceOwnership()": "715018a6",
-			"transferOwnership(address)": "f2fde38b",
-			"unlock()": "a69df4b5"
+			"transferOwnership(address)": "f2fde38b"
 		}
 	},
 	"abi": [
@@ -72,32 +71,6 @@
 			],
 			"name": "OwnershipTransferred",
 			"type": "event"
-		},
-		{
-			"inputs": [],
-			"name": "geUnlockTime",
-			"outputs": [
-				{
-					"internalType": "uint256",
-					"name": "",
-					"type": "uint256"
-				}
-			],
-			"stateMutability": "view",
-			"type": "function"
-		},
-		{
-			"inputs": [
-				{
-					"internalType": "uint256",
-					"name": "time",
-					"type": "uint256"
-				}
-			],
-			"name": "lock",
-			"outputs": [],
-			"stateMutability": "nonpayable",
-			"type": "function"
 		},
 		{
 			"inputs": [],
@@ -128,13 +101,6 @@
 				}
 			],
 			"name": "transferOwnership",
-			"outputs": [],
-			"stateMutability": "nonpayable",
-			"type": "function"
-		},
-		{
-			"inputs": [],
-			"name": "unlock",
 			"outputs": [],
 			"stateMutability": "nonpayable",
 			"type": "function"

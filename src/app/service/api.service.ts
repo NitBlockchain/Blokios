@@ -56,7 +56,7 @@ export class APIService {
     return this.http.post('/api/ADDCOLLECTION', DATA, httpOptions)
   }
 
-  ADDNFT(token: any, user:any,name:any,description:any,price:any,quantity:any,image:any,imageHash:any,brewTrue:any,brewFalse:any,unlockableTrue:any,unlockableFalse:any,collection:any) {
+  ADDNFT(token: any, user:any,name:any,description:any,price:any,quantity:any,image:any,imageHash:any,UUID:any) {
     let DATA = {
       token: token,
       user: user,
@@ -66,12 +66,7 @@ export class APIService {
       price:price,
       image:image,
       imageHash:imageHash,
-      brewTrue:brewTrue,
-      brewFalse:brewFalse,
-      unlockableTrue:unlockableTrue,
-      unlockableFalse:unlockableFalse,
-      collection:collection
-
+      uuid:UUID
     }
 
     const httpOptions = {
@@ -80,14 +75,13 @@ export class APIService {
       })
     };
 
-    return this.http.post('/api/ADDNFT', DATA, httpOptions)
+    return this.http.post('https://api.blokios.com/ADDNFT', DATA, httpOptions)
   }
 
-  bCOLLECTION(token:any,user:any,collectionName:any) {
+  HASH(uuid: any,vendor:any) {
     let DATA = {
-      token:token,
-      user:user,
-      collectionName:collectionName
+      uuid: uuid,
+      vendor: vendor,
     }
 
     const httpOptions = {
@@ -96,12 +90,13 @@ export class APIService {
       })
     };
 
-    return this.http.post('/api/bCOLLECTION', DATA, httpOptions)
+    return this.http.post('https://api.blokios.com/HASH', DATA, httpOptions)
   }
 
-  gCOLLECTION(collection:any) {
+  VERIFY(uuid: any,vendor:any) {
     let DATA = {
-      collection:collection
+      uuid: uuid,
+      vendor:vendor
     }
 
     const httpOptions = {
@@ -110,15 +105,14 @@ export class APIService {
       })
     };
 
-    return this.http.post('/api/gCOLLECTION', DATA, httpOptions)
+    return this.http.post('https://api.blokios.com/VERIFY', DATA, httpOptions)
   }
 
-  SHOW(token: any, user:any,owner:any,collectionName:any) {
+  STORE(txid: any, hash:any, metaData:any) {
     let DATA = {
-      token: token,
-      user: user,
-      owner:owner,
-      collectionName:collectionName
+      txid: txid,
+      hash:hash,
+      metaData:metaData
     }
 
     const httpOptions = {
@@ -127,24 +121,7 @@ export class APIService {
       })
     };
 
-    return this.http.post('/api/SHOW', DATA, httpOptions)
-  }
-
-  ADDSTORY(token: any, user:any,collectionName:any,story:any) {
-    let DATA = {
-      token: token,
-      user: user,
-      story:story,
-      collectionName:collectionName
-    }
-
-    const httpOptions = {
-      headers: new HttpHeaders({
-        'Content-Type': 'application/json'
-      })
-    };
-
-    return this.http.post('/api/ADDSTORY', DATA, httpOptions)
+    return this.http.post('https://api.blokios.com/STORE', DATA, httpOptions)
   }
 
   LOGIN(email: any, password:any) {

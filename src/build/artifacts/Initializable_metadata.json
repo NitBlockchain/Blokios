@@ -1,0 +1,46 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"notice": "https://github.com/maticnetwork/pos-portal/blob/master/contracts/common/Initializable.sol",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/blokios.sol": "Initializable"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/blokios.sol": {
+			"keccak256": "0x7174d598e7515398c877e6ff32810361d6edd13cb30688537aad20d1d2d25f79",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://fa15cae0cca835b9e1d9021c013c8367362a77b65e7a30fd892b55b607bf65a0",
+				"dweb:/ipfs/QmT6tGHYrH7nA6QcRxVZCiVnDSd33svWR5hReADHMKtwRJ"
+			]
+		}
+	},
+	"version": 1
+}

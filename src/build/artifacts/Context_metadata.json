@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.6.12+commit.27d51765"
+		"version": "0.8.0+commit.c7dfd78e"
 	},
 	"language": "Solidity",
 	"output": {
@@ -18,7 +18,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/NFTea.sol": "Context"
+			"contracts/blokios.sol": "Context"
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},
@@ -32,12 +32,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/NFTea.sol": {
-			"keccak256": "0x6c9b07b629ade5835e370e616f249f000e0e9be4998962027da6bba823ed92a6",
-			"license": "MIT",
+		"contracts/blokios.sol": {
+			"keccak256": "0x7174d598e7515398c877e6ff32810361d6edd13cb30688537aad20d1d2d25f79",
+			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://f9726b70d93820f32db10d753c46a7badca77a5fd19e6d55c259f46efe1d795e",
-				"dweb:/ipfs/QmWuSH1VxMvXCpibJULfPo1F9Ggtx6a6K8PGNd5naXHtxr"
+				"bzz-raw://fa15cae0cca835b9e1d9021c013c8367362a77b65e7a30fd892b55b607bf65a0",
+				"dweb:/ipfs/QmT6tGHYrH7nA6QcRxVZCiVnDSd33svWR5hReADHMKtwRJ"
 			]
 		}
 	},

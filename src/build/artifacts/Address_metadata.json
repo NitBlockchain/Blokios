@@ -1,11 +1,12 @@
 {
 	"compiler": {
-		"version": "0.6.12+commit.27d51765"
+		"version": "0.8.0+commit.c7dfd78e"
 	},
 	"language": "Solidity",
 	"output": {
 		"abi": [],
 		"devdoc": {
+			"details": "Collection of functions related to the address type",
 			"kind": "dev",
 			"methods": {},
 			"version": 1
@@ -18,7 +19,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/NFTea.sol": "Address"
+			"contracts/blokios.sol": "Address"
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},
@@ -32,12 +33,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/NFTea.sol": {
-			"keccak256": "0x177751b383bff71960eb22fa477eeae7a501cc4c4b588c39381f64fff6aa3ad1",
-			"license": "MIT",
+		"contracts/blokios.sol": {
+			"keccak256": "0x7174d598e7515398c877e6ff32810361d6edd13cb30688537aad20d1d2d25f79",
+			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://bc11e8d6f290c887ac641f3b1dda58f30408e7a4e2decab82b5cd87a0cb6890a",
-				"dweb:/ipfs/QmYNpytAJDXG2tm3pXE9MmzjczTbJKM9Z3u4xYg5rJy2z3"
+				"bzz-raw://fa15cae0cca835b9e1d9021c013c8367362a77b65e7a30fd892b55b607bf65a0",
+				"dweb:/ipfs/QmT6tGHYrH7nA6QcRxVZCiVnDSd33svWR5hReADHMKtwRJ"
 			]
 		}
 	},

@@ -1,0 +1,75 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "bytes4",
+						"name": "interfaceId",
+						"type": "bytes4"
+					}
+				],
+				"name": "supportsInterface",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "Implementation of the {IERC165} interface. Contracts may inherit from this and call {_registerInterface} to declare their support of an interface.",
+			"kind": "dev",
+			"methods": {
+				"supportsInterface(bytes4)": {
+					"details": "See {IERC165-supportsInterface}. Time complexity O(1), guaranteed to always use less than 30 000 gas."
+				}
+			},
+			"stateVariables": {
+				"_supportedInterfaces": {
+					"details": "Mapping of interface ids to whether or not it's supported."
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/blokios.sol": "ERC165"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/blokios.sol": {
+			"keccak256": "0x7174d598e7515398c877e6ff32810361d6edd13cb30688537aad20d1d2d25f79",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://fa15cae0cca835b9e1d9021c013c8367362a77b65e7a30fd892b55b607bf65a0",
+				"dweb:/ipfs/QmT6tGHYrH7nA6QcRxVZCiVnDSd33svWR5hReADHMKtwRJ"
+			]
+		}
+	},
+	"version": 1
+}
